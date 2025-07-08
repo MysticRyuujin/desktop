@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -128,8 +128,16 @@ Page {
             if(Qt.platform.os === 'osx')
             {
                 // Extension is not installed, checkbox has been enabled, the installation process is started
-                return SettingsMessages.stMacOSNotInstalledMessage + " [[" +
-            uiTranslate("NetworkPage", "Learn More") + "]]"
+                if(NativeHelpers.macosVersion15)
+                {
+                    return SettingsMessages.stMacOS15NotInstalledMessage + " [[" +
+                    uiTranslate("NetworkPage", "Learn More") + "]]"
+                }
+                else
+                {
+                    return SettingsMessages.stMacOSNotInstalledMessage + " [[" +
+                    uiTranslate("NetworkPage", "Learn More") + "]]"
+                }
             }
             else if(Qt.platform.os === 'windows')
             {

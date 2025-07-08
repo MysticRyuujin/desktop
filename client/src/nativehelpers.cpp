@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -354,6 +354,17 @@ bool NativeHelpers::isMacOSSplitTunnelSupported() const
     // due to NETransparentProxyProvider limitations:
     // https://developer.apple.com/documentation/networkextension/netransparentproxyprovider
     return QOperatingSystemVersion::current().majorVersion() >= 11;
+#else
+    // Meaningless return value if the platform isn't macOS
+    return true;
+#endif
+}
+
+bool NativeHelpers::isMacOSVersion15() const
+{
+#if defined(Q_OS_MACOS)
+    // We use this because installation instructions are different in macos 15 (and above)
+    return QOperatingSystemVersion::current().majorVersion() >= 15;
 #else
     // Meaningless return value if the platform isn't macOS
     return true;

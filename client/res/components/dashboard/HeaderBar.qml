@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -433,7 +433,16 @@ Item {
     Action {
       text: uiTr("Logout")
       enabled: Daemon.account.loggedIn
-      onTriggered: Daemon.logout()
+      onTriggered: {
+        if (Daemon.state.dedicatedIpLocations.length == 0) {
+          Daemon.logout();
+        }
+        else {
+          wSettings.showSettings();
+          ClientNotifications.showAccountPage();
+          ClientNotifications.requestLogout();
+        }
+      }
     }
     Action {
       text: uiTr("Quit")

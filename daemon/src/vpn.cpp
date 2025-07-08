@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -918,7 +918,7 @@ void VPNConnection::scheduleDnsCacheFlush()
     {
         qInfo() << "Flushing DNS cache";
 #if defined(Q_OS_LINUX)
-        Exec::bash(QStringLiteral("if [[ $(realpath /etc/resolv.conf) =~ systemd ]]; then systemd-resolve --flush-caches; fi"));
+        Exec::bash(QStringLiteral("if [[ $(realpath /etc/resolv.conf) =~ systemd ]]; then resolvectl flush-caches; fi"));
 #elif defined(Q_OS_MAC)
         Exec::cmd(QStringLiteral("dscacheutil"), {QStringLiteral("-flushcache")});
         Exec::cmd(QStringLiteral("discoveryutil"), {QStringLiteral("udnsflushcaches")});

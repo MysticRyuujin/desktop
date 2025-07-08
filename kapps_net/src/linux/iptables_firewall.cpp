@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -805,6 +805,9 @@ IpTablesFirewall::Impl::Impl(const kapps::net::FirewallConfig &config)
         .anchor<ChainEnum::OUTPUT>(IPVersion::Both, "200.allowVPN", {
             // To be added at runtime, dependent upon vpn method (i.e openvpn or wireguard)
         })
+        .anchor<ChainEnum::OUTPUT>(IPVersion::Both, "110.blockVpnIP", {
+            // updated at run-time
+        })
         .anchor<ChainEnum::OUTPUT>(IPVersion::Both, "100.blockAll", {
             "-j REJECT",
         })
@@ -901,9 +904,9 @@ void IpTablesFirewall::Impl::install()
     kapps::core::Exec::bash(qs::format("ip -6 rule add lookup main suppress_prefixlength 1 prio %", kapps::net::Routing::Priorities::suppressedMain));
 
     // Route forwarded packets
-    kapps::core::Exec::bash(qs::format("ip rule add from all fwmark % lookup % prio %", 
+    kapps::core::Exec::bash(qs::format("ip rule add from all fwmark % lookup % prio %",
         fwmark().forwardedPacketTag(), routing().forwardedTable(), kapps::net::Routing::Priorities::forwarded));
-    kapps::core::Exec::bash(qs::format("ip -6 rule add from all fwmark % lookup % prio %", 
+    kapps::core::Exec::bash(qs::format("ip -6 rule add from all fwmark % lookup % prio %",
         fwmark().forwardedPacketTag(), routing().forwardedTable(), kapps::net::Routing::Priorities::forwarded));
 }
 

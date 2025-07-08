@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -148,9 +148,13 @@ struct KAPPS_NET_EXPORT FirewallParams
     std::vector<uint32_t> existingDNSServers;
 #if defined(KAPPS_CORE_OS_MACOS)
     // This parameter controls if Split Tunnel transparent proxy logs
-    // are saved in the same folder as pia-daemon 
+    // are saved in the same folder as pia-daemon
     bool transparentProxyLogEnabled;
 #endif
+
+    // Used for linux-only firewall rule 110.blockVpnIP
+    std::string externalVpnIp;
+    std::string method;
 };
 
 }}

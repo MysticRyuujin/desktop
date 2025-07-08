@@ -59,72 +59,82 @@
       <translation>تسجيل خروج / تبديل الحساب</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="78"/>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="82"/>
+      <source>Before you log out</source>
+      <translation>قبل تسجيل الخروج</translation>
+    </message>
+    <message>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="88"/>
+      <source>You have an active Dedicated IP token. It will be removed when you log out. You can re-activate it using the token. Are you sure you want to continue?</source>
+      <translation>لديك رمز IP مخصص نشط. سيتم إزالته عند تسجيل الخروج. يمكنك إعادة تفعيله باستخدام الرمز المميز. هل أنت متأكد من أنك تريد المتابعة؟</translation>
+    </message>
+    <message>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="112"/>
       <source>Subscription</source>
       <translation>الاشتراك</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="99"/>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="133"/>
       <source>Expired</source>
       <translation>منتهي</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="106"/>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="140"/>
       <source>(expired on %1)</source>
       <translation>(انتهى في %1)</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="108"/>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="142"/>
       <source>(renews on %1)</source>
       <translation>(يتجدد في %1)</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="110"/>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="144"/>
       <source>(expires on %1)</source>
       <translation>(ينتهي في %1)</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="132"/>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="166"/>
       <source>Purchase Subscription</source>
       <translation>شراء اشتراك</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="133"/>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="167"/>
       <source>Manage Subscription</source>
       <translation>إدارة الاشتراك</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="133"/>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="167"/>
       <source>Renew Subscription</source>
       <translation>تجديد الاشتراك</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="191"/>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="225"/>
       <source>REFER A FRIEND. GET 30 DAYS FREE.</source>
       <translation>قم بإحالة أحد الأصدقاء. احصل على 30 يومًا مجانًا.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="204"/>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="238"/>
       <source>Refer your friends and family. For every signup we’ll give you both 30 days free.</source>
       <translation>رشّحنا لأصدقائك وعائلتك. مقابل كل تسجيل، سنمنح كليكما 30 يومًا مجانًا.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="231"/>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="265"/>
       <source>Refer a Friend</source>
       <translation>إحالة صديق</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="273"/>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="307"/>
       <source>You&apos;re not logged in</source>
       <translation>لم تسجّل الدخول</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="284"/>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="318"/>
       <source>To view your account details, please log in to your account</source>
       <translation>لعرض تفاصيل حسابك، يرجى تسجيل الدخول إلى حسابك</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="296"/>
+      <location filename="../../../client/res/components/settings/pages/account/AccountPage.qml" line="330"/>
       <source>Log in to your account</source>
       <translation>سجل الدخول إلى حسابك</translation>
     </message>
@@ -389,282 +399,276 @@
       <translation>لم يتم تثبيت محول TAP لنفق VPN.  يمكنك إعادة تثبيته من الإعدادات.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="162"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="163"/>
       <source>Restart to complete installation.</source>
       <translation>إعادة التشغيل لإكمال التثبيت.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="163"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="164"/>
       <source>The system must be restarted before you can connect.</source>
       <translation>يجب إعادة تشغيل النظام قبل أن تتمكن من الاتصال.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="176"/>
-      <source>The WinTUN adapter for the VPN tunnel is not installed.  You can reinstall it from Settings.</source>
-      <extracomment>&quot;WinTUN&quot; is name of the virtual network adapter and is not localized.</extracomment>
-      <translation>لم يتم تثبيت محول WinTUN لنفق VPN.  يمكنك إعادة تثبيته من الإعدادات.</translation>
-    </message>
-    <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="189"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="177"/>
       <source>The split tunnel filter is not installed.</source>
       <translation>لم يتم تثبيت مرشح النفق المقسم.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="190"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="178"/>
       <source>The App Exclusion feature requires the split tunnel filter.  Reinstall it from Settings.</source>
       <translation>تتطلب ميزة استبعاد التطبيقات تثبيت مرشح النفق المقسم. أعد تثبيته من الإعدادات.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="201"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="189"/>
       <location filename="../../../client/res/components/common/DriverNotificationStatus.qml" line="12"/>
       <source>Reinstall</source>
       <translation>إعادة التثبيت</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="215"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="203"/>
       <source>The App Exclusion feature requires the split tunnel filter.  Restart to finish installation.</source>
       <translation>تتطلب ميزة استبعاد التطبيقات تثبيت مرشح النفق المقسم. أعد التشغيل لإكمال التثبيت.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="228"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="216"/>
       <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="45"/>
       <source>Iptables is not installed.</source>
       <extracomment>Message for Linux indicating that iptables is missing</extracomment>
       <translation>Iptables غير مثبّت.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="229"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="217"/>
       <source>Iptables is required to connect to the VPN. Reinstall the application or manually install the iptables or iptables-nft package, then restart your computer.</source>
       <translation>Iptables مطلوب للاتصال بـ VPN. أعد تثبيت التطبيق أو ثبّت  iptablesأو حزمة iptables-nft يدويّاً ثمّ أعد تشغيل كمبيوترك.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="242"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="230"/>
       <source>Connection refused.</source>
       <translation>تم رفض الاتصال.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="248"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="236"/>
       <source>The server refused the connection.  Please check your username and password, and verify that your account is not expired.</source>
       <extracomment>This error could be caused by incorrect credentials or an expired account, but it could have other causes too. The message should suggest checking those things without implying that they&apos;re necessarily the cause (to avoid frustrating users who are sure their account is current).</extracomment>
       <translation>رفض الخادم الاتصال.  يرجى التحقق من اسم المستخدم وكلمة المرور، والتحقق من عدم انتهاء صلاحية حسابك.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="257"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="245"/>
       <source>Could not configure DNS.</source>
       <translation>تعذر تكوين DNS.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="258"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="246"/>
       <source>Enable debug logging and check the daemon log for specific details.</source>
       <translation>مكن تسجيل التصحيح وفحص سجل البرنامج الخفي للحصول على تفاصيل محددة.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="261"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="249"/>
       <source>Daemon Log</source>
       <translation>سجل البرنامج الخفي</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="263"/>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="295"/>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="354"/>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="436"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="251"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="283"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="342"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="424"/>
       <source>Settings</source>
       <translation>الإعدادات</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="271"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="259"/>
       <source>Failed to run /usr/bin/xdg-open.  Please open the daemon log file from:</source>
       <translation>فشل تشغيل /usr/bin/xdg-open. يرجى فتح ملف سجل البرنامج الخفي من:</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="288"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="276"/>
       <source>Can&apos;t connect to Handshake.</source>
       <extracomment>Indicates that we can&apos;t connect to the Handshake name-resolution network. &quot;Handshake&quot; is a brand name and should be left as-is.</extracomment>
       <translation>يتعذّر الاتصال بـ Handshake.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="292"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="280"/>
       <source>Can&apos;t set up name resolution with Handshake.  Continue waiting, or try a different Name Server setting.</source>
       <extracomment>Detailed message about failure to connect to the Handshake name- resolution network. &quot;Handshake&quot; is a brand name and should be left as-is.</extracomment>
       <translation>يتعذّر إعداد تحليل الاسم مع Handshake. استمر في الانتظار، أو جرّب إعداد اسم خادم مختلف.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="306"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="294"/>
       <source>Running PIA as administrator is not recommended.</source>
       <translation>لا يُنصح بتشغيل PIA كمسؤول.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="307"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="295"/>
       <source>Running PIA as administrator can prevent Launch on System Startup from working and may cause other problems.</source>
       <translation>يمكن أن يؤدي تشغيل PIA كمسؤول إلى منع بدء التشغيل عند بدء تشغيل النظام وقد يتسبب في حدوث مشاكل أخرى.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="319"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="307"/>
       <source>KILLSWITCH ENABLED</source>
       <translation>تم تمكين مفتاح الإنهاء</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="320"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="308"/>
       <source>Killswitch is enabled.</source>
       <translation>تم تمكين مفتاح الإنهاء.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="321"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="309"/>
       <source>Access to the Internet is blocked because the killswitch feature is enabled in Settings.</source>
       <translation>تم حظر الوصول إلى الإنترنت بسبب تمكين مفتاح الإنهاء في الإعدادات.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="324"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="312"/>
       <source>Change</source>
       <translation>تغيير</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="337"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="325"/>
       <source>RECONNECTING...</source>
       <translation>جارٍ إعادة الاتصال...</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="338"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="326"/>
       <source>The connection to the VPN server was lost.</source>
       <translation>تم فقد الاتصال بخادم VPN.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="347"/>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="365"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="335"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="353"/>
       <source>CONNECTING...</source>
       <translation>جارٍ الاتصال...</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="350"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="338"/>
       <source>Can&apos;t connect to the proxy.</source>
       <extracomment>Warning message used when the app is currently trying to connect to a proxy, but the proxy can&apos;t be reached.</extracomment>
       <translation>تعذر الاتصال بالبروكسي.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="351"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="339"/>
       <source>The proxy can&apos;t be reached.  Check your proxy settings, and check that the proxy is available.</source>
       <translation>لا يمكن الوصول إلى البروكسي. تحقق من إعدادات خادم البروكسي، وتحقق من أن الخادم متوفر.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="366"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="354"/>
       <source>We couldn&apos;t establish the connection to the VPN server. Please get in touch with our support department.</source>
       <translation>تعذّر إنشاء اتصال بخادم VPN. يرجى التواصل مع قسم الدعم لدينا.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="379"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="367"/>
       <source>RECONNECT NEEDED</source>
       <translation>يجب إعادة الاتصال</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="380"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="368"/>
       <source>Reconnect to apply settings.</source>
       <translation>أعد الاتصال لتطبيق التغييرات.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="381"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="369"/>
       <source>Some settings changes won&apos;t take effect until the next time you connect. Click to reconnect now.</source>
       <translation>لن تسري بعض تغييرات الإعدادات إلا عند اتصالك في المرة التالية. اضغط لإعادة الاتصال الآن.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="390"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="378"/>
       <source>Connected with OpenVPN.</source>
       <translation>متصل بـ OpenVPN.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="393"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="381"/>
       <source>Connected with OpenVPN to log in for the first time. Reconnect to use WireGuard.</source>
       <translation>متصل بـ OpenVPN لتسجيل الدخول لأول مرة. أعد الاتصال لاستخدام WireGuard.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="395"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="383"/>
       <source>Connected with OpenVPN to log in for the first time.</source>
       <translation>متصل بـ OpenVPN لتسجيل الدخول لأول مرة.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="414"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="402"/>
       <source>Connected using %1 port %2.</source>
       <extracomment>Message when the client automatically uses a transport other than the user&apos;s chosen transport (because the user&apos;s settings did not work). &quot;Connected&quot; means the client is currently connected right now using this setting. %1 is the protocol used (&quot;UDP&quot; or &quot;TCP&quot;), and %2 is the port number. For example: &quot;UDP port 8080&quot; or &quot;TCP port 443&quot;.</extracomment>
       <translation>تم الاتصال بـ %1 منفذ %2.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="423"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="411"/>
       <source>Try Alternate Settings is enabled.  The server could not be reached on the default %1 port, so %2 port %3 was used instead.</source>
       <extracomment>Detailed message used when the client automatically uses an alternate transport, and the user has selected the &quot;default&quot; port (the actual value used for the default is not shown, since it could vary among servers). %1 is the chosen protocol (&quot;UDP&quot; or &quot;TCP&quot;), and &quot;%2 port %3&quot; refers to the actual transport used, such as &quot;TCP port 443&quot; or &quot;UDP port 8080&quot;.</extracomment>
       <translation>تم تمكين تجربة الإعدادات البديلة. تعذر الوصول إلى الخادم على منفذ %1 الافتراضي، لذا تم استخدام منفذ %2 %3 بدلاً من ذلك.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="431"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="419"/>
       <source>Try Alternate Settings is enabled.  The server could not be reached on %1 port %2, so %3 port %4 was used instead.</source>
       <extracomment>Detailed message when the client automatically uses an alternate transport. &quot;%1 port %2&quot; refers to the chosen transport, and &quot;%3 port %4&quot; refers to the actual transport; for example &quot;TCP port 443&quot; or &quot;UDP port 8080&quot;. The &quot;Try Alternate Settings&quot; setting is on the Connection page.</extracomment>
       <translation>تم تمكين تجربة الإعدادات البديلة. تعذر الوصول إلى الخادم على %1 منفذ %2، لذا تم استخدام %3 منفذ %4 بدلاً من ذلك.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="445"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="433"/>
       <source>Subscription expires in %1 days.</source>
       <translation>ينتهي الاشتراك خلال %1 أيام.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="448"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="436"/>
       <source>Renew</source>
       <translation>تجديد</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="462"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="450"/>
       <source>Your dedicated IP will expire in %1 days.</source>
       <extracomment>Message displayed when a purchased dedicated IP will expire soon. %1 is at least 2; there are specific messages for 1 day or 0 days remaining.</extracomment>
       <translation>ستنتهي صلاحية عنوان IP المخصّص خلال %1 أيام.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="468"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="456"/>
       <source>Your dedicated IP will expire in 1 day.</source>
       <extracomment>Message displayed when a purchased dedicated IP will expire in 1 day. (Specifically, in 12-36 hours, since the time remaining is rounded to the nearest day.)</extracomment>
       <translation>ستنتهي صلاحية عنوان IP المخصّص خلال 1 يوم.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="473"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="461"/>
       <source>Your dedicated IP will expire today.</source>
       <extracomment>Message displayed when a purchased dedicated IP will expire in less than 12 hours.</extracomment>
       <translation>ستنتهي صلاحية عنوان IP المخصّص اليوم.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="478"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="466"/>
       <source>Get a new one</source>
       <translation>احصل على واحد جديد</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="490"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="478"/>
       <source>Your dedicated IP was updated.</source>
       <translation>تم تحديث عنوان IP المخصّص.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="506"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="494"/>
       <source>Unable to reach login server.</source>
       <extracomment>Dashboard notification for being unable to reach our main API server in order to authenticate the user&apos;s account. The phrase should convey that the problem is network related and that we are merely offline or &quot;out of touch&quot; rather than there being any account problem.</extracomment>
       <translation>تعذر الوصول لخادم تسجيل الدخول.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="510"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="498"/>
       <source>Your account details are unavailable, but you may still be able to connect to the VPN.</source>
       <extracomment>Infotip to explain to the user that a login authentication failure is not necessarily a critical problem, but that the app will have reduced functionality until this works.</extracomment>
       <translation>تفاصيل حسابك غير متاحة، ولكن لا يزال بإمكانك الاتصال بخدمة VPN.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="514"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="502"/>
       <source>Retry</source>
       <translation>إعادة المحاولة</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="527"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="515"/>
       <source>Private Internet Access was updated.</source>
       <translation>تم تحديث Private Internet Access.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="530"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="518"/>
       <source>See what&apos;s new</source>
       <translation>اعرف ما هو الجديد</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="547"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="535"/>
       <source>The application quit unexpectedly. Your VPN connection was preserved.</source>
       <extracomment>Indicates that Private Internet Access had previously crashed or otherwise stopped unexpectedly - shown the next time the user starts the app.</extracomment>
       <translation>تم إنهاء التطبيق بشكل غير متوقع. تم الاحتفاظ باتصال VPN.</translation>
@@ -775,7 +779,7 @@
     </message>
     <message>
       <location filename="../../../client/res/components/settings/pages/multihop/Socks5ProxyDialog.qml" line="65"/>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="58"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="57"/>
       <source>Default</source>
       <translation>الافتراضي</translation>
     </message>
@@ -790,51 +794,63 @@
       <translation>كلمة المرور (اختياري)</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="67"/>
+      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="68"/>
       <source>The Shadowsocks proxy setting requires TCP.</source>
       <translation>يتطلب إعداد وكيل Shadowsocks بروتوكول TCP.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="87"/>
+      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="88"/>
       <source>Warning: Your traffic is sent unencrypted and is vulnerable to eavesdropping.</source>
       <translation>تحذير: يتم إرسال حركة مرورك بدون تشفير وهي بذلك عرضة للتنصت.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="132"/>
-      <source>Configuration Method</source>
-      <translation>طريقة التكوين</translation>
+      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="162"/>
+      <source>TAP (DHCP)</source>
+      <extracomment>&quot;TAP&quot; is the name of the OpenVPN virtual network adapter driver and should not be translated. &quot;DHCP&quot; refers to Dynamic Host Configuration Protocol, a network configuration technology. This probably is not translated for most languages.</extracomment>
+      <translation>TAP (DHCP)</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="139"/>
-      <source>DHCP</source>
-      <extracomment>&quot;DHCP&quot; refers to Dynamic Host Configuration Protocol, a network configuration technology. This probably is not translated for most languages.</extracomment>
-      <translation>DHCP</translation>
+      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="167"/>
+      <source>TAP (Static)</source>
+      <extracomment>&quot;TAP&quot; is the name of the OpenVPN virtual network adapter driver and should not be translated. &quot;Static&quot; is an alternative to DHCP - instead of using dynamic configuration on the network adapter, it is configured with static addresses.</extracomment>
+      <translation>TAP (ثابت)</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="143"/>
-      <source>Static</source>
-      <extracomment>&quot;Static&quot; is an alternative to DHCP - instead of using dynamic configuration on the network adapter, it is configured with static addresses.</extracomment>
-      <translation>ثابت</translation>
+      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="170"/>
+      <source>Determines which virtual network driver is used and how it is configured.</source>
+      <translation>يحدد برنامج تشغيل الشبكة الافتراضية المستخدم وإعداداته.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="148"/>
-      <source>Determines how addresses are configured on the TAP adapter.  If you have trouble connecting, a different method may be more reliable.</source>
-      <extracomment>Description of the configuration method choices for Windows. This should suggest that the only reason to change this setting is if you have trouble connecting.</extracomment>
-      <translation>يحدد كيفية تكوين العناوين على محول TAP. إذا كنت تواجه مشكلة في الاتصال، فقد تكون الطريقة الأخرى أكثر موثوقية.</translation>
+      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="172"/>
+      <source>WinTUN: Modern driver, offers the best speeds (try this first)</source>
+      <extracomment>WinTUN is the name of the driver and should not be translated.</extracomment>
+      <translation>WinTUN: برنامج تشغيل حديث يوفر أعلى مستويات السرعة (جرّبه أولا!)</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="165"/>
+      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="177"/>
+      <source>TAP (DHCP): Older driver, use if WinTUN isn&apos;t working</source>
+      <extracomment>TAP is the name of the driver and should not be translated. &quot;DHCP&quot; refers to Dynamic Host Configuration Protocol, a network configuration technology. This probably is not translated for most languages.</extracomment>
+      <translation>TAP (DHCP): برنامج تشغيل قديم. استخدمه إذا تعذّر تشغيل برنامج WinTUN.</translation>
+    </message>
+    <message>
+      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="182"/>
+      <source>TAP (Static): Older driver, use if TAP (DHCP) isn&apos;t working</source>
+      <extracomment>&quot;TAP&quot; is the name of the OpenVPN virtual network adapter driver and should not be translated. &quot;Static&quot; is an alternative to DHCP - instead of using dynamic configuration on the network adapter, it is configured with static addresses.</extracomment>
+      <translation>TAP (ثابت): برنامج تشغيل أقدم. استخدمه إذا تعذّر تشغيل TAP (DHCP).</translation>
+    </message>
+    <message>
+      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="216"/>
       <source>Try Alternate Settings</source>
       <translation>تجربة الإعدادات البديلة</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="173"/>
+      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="224"/>
       <source>If the connection type and remote port above do not work, try other settings automatically.</source>
       <extracomment>Tip for the automatic transport setting. Refers to the &quot;Connection Type&quot; and &quot;Remote Port&quot; settings above on the Connection page.</extracomment>
       <translation>إذا لم يعمل نوع الاتصال والمنفذ البعيد أعلاه، جرب إعدادات أخرى تلقائيًا.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="179"/>
+      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="230"/>
       <source>Alternate settings can&apos;t be used when a proxy is configured.</source>
       <extracomment>Tip used for the automatic transport setting when a proxy is configured - the two settings can&apos;t be used together.</extracomment>
       <translation>لا يمكن استخدام الإعدادات البديلة عند وجود تكوين بروكسي.</translation>
@@ -851,53 +867,53 @@
       <translation>بروتوكول أحدث وأكثر كفاءة مع إمكانية رفع الأداء.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/protocol/ProtocolPage.qml" line="91"/>
-      <location filename="../../../client/res/components/settings/pages/protocol/ProtocolPage.qml" line="109"/>
+      <location filename="../../../client/res/components/settings/pages/protocol/ProtocolPage.qml" line="85"/>
+      <location filename="../../../client/res/components/settings/pages/protocol/ProtocolPage.qml" line="103"/>
       <source>Trademarks</source>
       <translation>العلامات التجارية</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/protocol/ProtocolPage.qml" line="99"/>
+      <location filename="../../../client/res/components/settings/pages/protocol/ProtocolPage.qml" line="93"/>
       <source>What do these settings mean?</source>
       <translation>ماذا تعني هذه الإعدادات؟</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/protocol/ProtocolPage.qml" line="117"/>
+      <location filename="../../../client/res/components/settings/pages/protocol/ProtocolPage.qml" line="111"/>
       <source>All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.</source>
       <translation>جميع أسماء المنتجات والشركات هي علامات تجارية أو علامات تجارية مسجلة لأصحابها المعنيين. استخدامها لا يعني أي انتماء أو مصادقة منهم.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/protocol/ProtocolPage.qml" line="119"/>
+      <location filename="../../../client/res/components/settings/pages/protocol/ProtocolPage.qml" line="113"/>
       <source>OpenVPN® is a trademark of OpenVPN Technologies, Inc.</source>
       <translation>®OpenVPN هي علامة تجارية لشركة OpenVPN Technologies، Inc.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/protocol/ProtocolPage.qml" line="120"/>
+      <location filename="../../../client/res/components/settings/pages/protocol/ProtocolPage.qml" line="114"/>
       <source>WireGuard® is a trademark of Jason A. Donenfeld, an individual.</source>
       <translation>®WireGuard هي علامة تجارية لشركة Jason A. Donenfeld.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="53"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="52"/>
       <source>Transport</source>
       <translation>النقل</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="54"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="53"/>
       <source>Remote Port</source>
       <translation>المنفذ البعيد</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="55"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="54"/>
       <source>Data Encryption</source>
       <translation>تشفير البيانات</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="56"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="55"/>
       <source>Data Authentication</source>
       <translation>مصادقة البيانات</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="57"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="56"/>
       <source>Handshake</source>
       <translation>المصافحة</translation>
     </message>
@@ -1046,17 +1062,17 @@
   <context>
     <name>DedicatedIpPage</name>
     <message>
-      <location filename="../../../client/res/components/settings/pages/dedicated-ip/DedicatedIpPage.qml" line="48"/>
+      <location filename="../../../client/res/components/settings/pages/dedicated-ip/DedicatedIpPage.qml" line="46"/>
       <source>Dedicated IP</source>
       <translation>عنوان IP مخصّص</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/dedicated-ip/DedicatedIpPage.qml" line="57"/>
+      <location filename="../../../client/res/components/settings/pages/dedicated-ip/DedicatedIpPage.qml" line="55"/>
       <source>Secure your remote connections to any asset with a dedicated IP from a country of your choice.  During your subscription, this IP will be yours and yours alone, protecting your data transfers with the strongest encryption out there.</source>
       <translation>أمّن اتصالاتك بأي جهة عن بُعد باستخدام عنوان IP مخصّص من بلد من اختيارك. أثناء اشتراكك، سيكون عنوان IP هذا ملكًا لك وحدك، مما يحمي عمليات نقل البيانات الخاصة بك بأقوى تشفير في الوقت الحالي.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/dedicated-ip/DedicatedIpPage.qml" line="75"/>
+      <location filename="../../../client/res/components/settings/pages/dedicated-ip/DedicatedIpPage.qml" line="73"/>
       <source>Get Your Dedicated IP</source>
       <translation>احصل على عنوان IP مخصّص</translation>
     </message>
@@ -1189,7 +1205,7 @@
     <message>
       <location filename="../../../client/res/components/settings/pages/general/GeneralPage.qml" line="50"/>
       <source>Allow Background Latency Checks</source>
-      <translation type="unfinished">Allow Background Latency Checks</translation>
+      <translation>السماح بالتحقق من زمن الاستجابة في الخلفية</translation>
     </message>
     <message>
       <location filename="../../../client/res/components/settings/pages/general/GeneralPage.qml" line="57"/>
@@ -1373,7 +1389,7 @@
       <translation>الإعدادات</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/dashboard/HeaderBar.qml" line="421"/>
+      <location filename="../../../client/res/components/dashboard/HeaderBar.qml" line="430"/>
       <source>Quit</source>
       <translation>خروج</translation>
     </message>
@@ -1381,189 +1397,189 @@
   <context>
     <name>HelpPage</name>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="43"/>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="95"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="40"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="92"/>
       <source>Version:</source>
       <translation>الإصدار:</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="51"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="48"/>
       <source>v%1</source>
       <translation>الإصدار %1</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="109"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="106"/>
       <source>Client:</source>
       <translation>العميل:</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="124"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="121"/>
       <source>Daemon:</source>
       <translation>العفريت:</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="141"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="138"/>
       <source>Changelog</source>
       <translation>سجل التغييرات</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="151"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="148"/>
       <source>Quick Tour</source>
       <extracomment>This link displays the tour that users see initially after installation.</extracomment>
       <translation>جولة سريعة</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="162"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="159"/>
       <source>Enable Debug Logging</source>
       <translation>تمكين تسجيل تصحيح الأخطاء</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="163"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="160"/>
       <source>Save debug logs which can be submitted to technical support to help troubleshoot problems.</source>
       <translation>حفظ سجلات تصحيح الأخطاء التي يمكن إرسالها إلى الدعم الفني للمساعدة في استكشاف المشكلات وإصلاحها.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="188"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="185"/>
       <source>Submit Debug Logs</source>
       <translation>إرسال سجلات تصحيح الأخطاء</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="214"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="211"/>
       <source>Support Portal</source>
       <translation>بوابة الدعم</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="222"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="219"/>
       <source>Disable Accelerated Graphics</source>
       <translation>تعطيل الرسوميات المسرّعة</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="232"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="229"/>
       <source>Restart Private Internet Access to apply this setting</source>
       <translation>أعد تشغيل Private Internet Access لتطبيق هذا الإعداد</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="241"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="238"/>
       <source>Accelerated graphics reduce CPU usage and enable graphical effects, but can cause issues with certain graphics cards or drivers.</source>
       <translation>تعمل الرسومات المسرَّعة على تقليل استخدام المعالج وتمكين التأثيرات الرسومية، ولكن يمكن أن تسبب مشكلات في بطاقات الرسوميات أو برامج التشغيل.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="250"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="247"/>
       <source>Receive Beta Updates</source>
       <translation>تلقي تحديثات الإصدار التجريبي</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="251"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="248"/>
       <source>Join our beta program to test new features and provide feedback.</source>
       <translation>انضم إلى برنامجنا التجريبي لاختبار الميزات الجديدة وتقديم التعليقات.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="300"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="297"/>
       <source>Help Improve PIA</source>
       <translation>المساعدة في تحسين PIA</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="301"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="298"/>
       <source>Help ensure our service&apos;s performance by sharing connection stats with us.</source>
       <translation>ساعدنا في ضمان أداء خدمتنا من خلال مشاركة إحصائيات الاتصال معنا.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="330"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="327"/>
       <source>Connection Events</source>
       <translation>أحداث الاتصال</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="352"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="349"/>
       <source>No events have been stored recently.</source>
       <translation>لم يتم تخزين أي أحداث مؤخرًا.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="352"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="349"/>
       <source>Turn on the &quot;Help Improve PIA&quot; setting, then connect to see events.</source>
       <translation>شغّل إعداد &quot;المساعدة في تحسين PIA&quot;، ثم اتصل لمشاهدة الأحداث.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="373"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="370"/>
       <source>Find out more</source>
       <translation>معرفة المزيد</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="383"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="380"/>
       <source>View shared data</source>
       <translation>عرض البيانات المشاركة</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="397"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="394"/>
       <source>Reinstall:</source>
       <translation>إعادة التثبيت:</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="403"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="400"/>
       <source>TAP Adapter</source>
       <translation>TAP Adapter</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="404"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="401"/>
       <source>Reinstalling TAP Adapter...</source>
       <translation>إعادة تثبيت TAP Adapter...</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="421"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="418"/>
       <source>WinTUN Adapter</source>
       <translation>WinTUN Adapter</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="422"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="419"/>
       <source>Reinstalling WinTUN Adapter...</source>
       <translation>إعادة تثبيت WinTUN Adapter...</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="451"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="444"/>
       <source>Reinstalling Split Tunnel Filter...</source>
       <translation>جارٍ تثبيت مرشح النفق المقسم...</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="452"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="445"/>
       <source>Split Tunnel Filter</source>
       <translation>مرشح النفق المقسّم</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="493"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="486"/>
       <source>The split tunnel filter was reinstalled.</source>
       <translation>تمت إعادة تثبيت مرشح النفق المقسم.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="522"/>
+      <location filename="../../../client/res/components/settings/pages/help/HelpPage.qml" line="515"/>
       <source>Uninstall Private Internet Access</source>
       <translation>إزالة تثبيت Private Internet Access</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/ReinstallLink.qml" line="34"/>
+      <location filename="../../../client/res/components/settings/pages/ReinstallLink.qml" line="33"/>
       <source>Waiting for Disconnect...</source>
       <translation>قيد انتظار قطع الاتصال...</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/ReinstallLink.qml" line="47"/>
+      <location filename="../../../client/res/components/settings/pages/ReinstallLink.qml" line="46"/>
       <source>The network adapter cannot be reinstalled while connected. Disconnect and reinstall now?</source>
       <translation>لا يمكن إعادة تثبيت بطاقة الشبكة وهي قيد الاتصال. هل تريد قطع الاتصال وإعادة التثبيت الآن؟</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/ReinstallLink.qml" line="47"/>
+      <location filename="../../../client/res/components/settings/pages/ReinstallLink.qml" line="46"/>
       <source>Disconnect needed</source>
       <translation>يجب قطع الاتصال</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/ReinstallLink.qml" line="81"/>
+      <location filename="../../../client/res/components/settings/pages/ReinstallLink.qml" line="80"/>
       <source>The network adapter has been successfully reinstalled.</source>
       <translation>تم إعادة تثبيت بطاقة الشبكة بنجاح.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/ReinstallLink.qml" line="84"/>
+      <location filename="../../../client/res/components/settings/pages/ReinstallLink.qml" line="83"/>
       <source>The network adapter has been successfully reinstalled. You may need to reboot your system.</source>
       <translation>تم إعادة تثبيت بطاقة الشبكة بنجاح. قد تحتاج إلى إعادة تشغيل النظام.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/help/ReinstallLink.qml" line="87"/>
+      <location filename="../../../client/res/components/settings/pages/ReinstallLink.qml" line="86"/>
       <source>There was an error while attempting to reinstall the network adapter.</source>
       <translation>حدث خطأ أثناء محاولة إعادة تثبيت بطاقة الشبكة.</translation>
     </message>
@@ -2065,39 +2081,40 @@
       <translation>نفق مقسّم</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="98"/>
+      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="99"/>
       <source>Installing split tunnel filter...</source>
       <translation>جارٍ تثبيت مرشح النفق المقسم...</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="107"/>
+      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="108"/>
       <source>Enabling this feature will install the split tunnel filter.</source>
       <translation>سيؤدي تمكين هذه الميزة إلى تثبيت مرشح النفق المقسم.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="113"/>
-      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="128"/>
+      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="116"/>
+      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="121"/>
+      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="137"/>
       <source>Learn More</source>
       <translation>اعرف المزيد</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="122"/>
+      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="131"/>
       <source>The split tunnel filter is not installed.  Reinstall it on the Help page.</source>
       <translation>لم يتم تثبيت مرشح النفق المقسم. يرجى إعادة تثبيته من صفحة المساعدة.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="127"/>
+      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="136"/>
       <source>Choose which applications use the VPN.</source>
       <translation>اختر التطبيقات التي تستخدم VPN.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="215"/>
-      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="220"/>
+      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="224"/>
+      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="229"/>
       <source>App Exclusions</source>
       <translation>استبعاد التطبيقات</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="286"/>
+      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="295"/>
       <source>Apps may need to be restarted for changes to be applied.</source>
       <translation>قد تحتاج إلى إعادة تشغيل التطبيقات لتطبيق التغييرات.</translation>
     </message>
@@ -2147,6 +2164,20 @@
       <location filename="../../../client/res/components/onboarding/OnboardingWindow.qml" line="15"/>
       <source>Quick Tour</source>
       <translation>جولة سريعة</translation>
+    </message>
+  </context>
+  <context>
+    <name>OpenVpnConnection</name>
+    <message>
+      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="137"/>
+      <source>Virtual Network Driver (Installing...)</source>
+      <extracomment>Label for the Virtual Network Driver setting when it cannot be changed due to an ongoing installation.</extracomment>
+      <translation>برنامج تشغيل الشبكة الافتراضية (جار التثبيت…)</translation>
+    </message>
+    <message>
+      <location filename="../../../client/res/components/settings/pages/protocol/OpenVpnConnection.qml" line="139"/>
+      <source>Virtual Network Driver</source>
+      <translation>برنامج تشغيل الشبكة الافتراضية</translation>
     </message>
   </context>
   <context>
@@ -2902,7 +2933,7 @@
   <context>
     <name>RatingRequestNotificationStatus</name>
     <message>
-      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="369"/>
+      <location filename="../../../client/res/components/common/ClientNotifications.qml" line="357"/>
       <location filename="../../../client/res/components/common/RatingRequestNotificationStatus.qml" line="39"/>
       <source>Contact Support</source>
       <translation>الاتصال بالدعم</translation>
@@ -3168,44 +3199,44 @@
       <translation>تتطلب هذه الميزة OpenVPN.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="49"/>
-      <source>WireGuard requires Windows 8 or later.</source>
-      <translation>يتطلب WireGuard نظام Windows 8 أو إصدار أحدث.</translation>
-    </message>
-    <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="60"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="59"/>
       <source>MTU</source>
       <translation>MTU</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="65"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="64"/>
       <source>Determines the maximum packet size allowed through the tunnel.</source>
       <translation>تحدد الحد الأقصى لحجم الحزمة المسموح به عبر النفق.</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="66"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="65"/>
       <source>Auto: Detect automatically, best for most connections</source>
       <translation>تلقائي: يكتشف تلقائيًا، الأفضل لمعظم الاتصالات</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="67"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="66"/>
       <source>Large Packets: Most efficient if the connection is reliable</source>
       <translation>حزم كبيرة: الأكثر فعالية إذا كان الاتصال يمكن الاعتماد عليه</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="68"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="67"/>
       <source>Small Packets: Less efficient but best on unreliable connections</source>
       <translation>حزم صغيرة: أقل كفاءة لكنها الأفضل إذا كان الاتصال لا يمكن الاعتماد عليه</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="71"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="70"/>
       <source>The split tunnel feature is available only on macOS 11 (Big Sur) or newer versions. Please update your OS if you want to use this feature</source>
       <translation>تتوفر ميزة الانقسام النفقي فقط على نظام التشغيل macOS 11 (Big Sur) وما أحدث. يرجى تحديث نظام التشغيل على جهازك إذا ترغب في استخدام هذه الميزة</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="73"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="72"/>
       <source>Split Tunnel is not installed. Go to System Settings -&gt; Privacy &amp; Security, scroll down to Security section and &quot;Allow&quot; PIA. Then click &quot;Allow&quot; on the Proxy Configurations popup</source>
       <translation>لم يتم تثبيت الانقسام النفقي. انتقل إلى إعدادات النظام -&gt; الخصوصية والأمان، ثم انقر فوق قسم الأمان واختر &quot;سماح&quot; PIA. ثم انقر فوق &quot;سماح&quot; في إعدادات البروكسي.</translation>
+    </message>
+    <message>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="74"/>
+      <source>Split Tunnel is not installed. Go to System Settings -&gt; General. Click &apos;i&apos; in the Network Extensions row and enable PIA Split Tunnel. Then click &quot;Allow&quot; on the Proxy Configurations popup</source>
+      <translation>لم يتم تثبيت الانقسام النفقي. ادخل إلى إعدادات النظام > إعدادات عامة. انقر على (i) في إضافات الشبكة وفعّل ميزة الانقسام النفقي. انقر بعد ذلك على "السماح" في نافذة إعدادات البروكسي.</translation>
     </message>
   </context>
   <context>
@@ -3423,7 +3454,7 @@
     <name>SplitTunnelAddAppRow</name>
     <message>
       <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelAppDialog.qml" line="31"/>
-      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="252"/>
+      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="261"/>
       <source>Add Application</source>
       <translation>إضافة تطبيق</translation>
     </message>
@@ -3442,7 +3473,7 @@
     </message>
     <message>
       <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelAddIpDialog.qml" line="79"/>
-      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="261"/>
+      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="270"/>
       <source>Add IP Address</source>
       <translation>إضافة عنوان IP</translation>
     </message>
@@ -3545,7 +3576,12 @@
   <context>
     <name>SplitTunnelPage</name>
     <message>
-      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="246"/>
+      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="47"/>
+      <source>Split Tunnel may act unpredictably with non-native ARM64 applications.</source>
+      <translation>قد يتعذّر استخدام ميزة الانقسام النفقي مع تطبيقات ARM64 غير الأصلية.</translation>
+    </message>
+    <message>
+      <location filename="../../../client/res/components/settings/pages/split-tunnel/SplitTunnelPage.qml" line="255"/>
       <source>Your Split Tunnel Rules</source>
       <translation>قواعد النفق المقسّم</translation>
     </message>
@@ -4101,17 +4137,17 @@
   <context>
     <name>mtu_setting</name>
     <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="61"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="60"/>
       <source>Auto</source>
       <translation>تلقائي</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="62"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="61"/>
       <source>Large Packets</source>
       <translation>حزم كبيرة</translation>
     </message>
     <message>
-      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="63"/>
+      <location filename="../../../client/res/components/settings/SettingsMessages.qml" line="62"/>
       <source>Small Packets</source>
       <translation>حزم صغيرة</translation>
     </message>
@@ -4370,167 +4406,157 @@
     </message>
     <message>
       <location filename="../../../extras/installer/win/strings.rc" line="90"/>
-      <source>Private Internet Access requires at least Windows 7 to run.</source>
-      <translation>يتطلب Private Internet Access نظام Windows 7 على الأقل لكي يعمل.</translation>
-    </message>
-    <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="91"/>
       <source>The 32-bit version of Private Internet Access can only run on a 32-bit version of Windows.</source>
       <translation>يمكن تشغيل إصدار 32 بت من Private Internet Access على إصدار 32 بت فقط من نظام Windows.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="92"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="91"/>
       <source>Failed to retrieve shell folder %s.</source>
       <translation>تعذَّر استرداد مجلد Shell %s.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="93"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="92"/>
       <source>Out of memory.</source>
       <translation>نفذت الذاكرة.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="94"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="93"/>
       <source>Payload decompression error.</source>
       <translation>خطأ في فك ضغط البيانات الأساسية.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="95"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="94"/>
       <source>Corrupted payload (CRC error).</source>
       <translation>بيانات أساسية معطوبة (خطأ CRC).</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="96"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="95"/>
       <source>Unable to create file: %s</source>
       <translation>تعذّر إنشاء الملف: %s</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="97"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="96"/>
       <source>Unable to write file: %s</source>
       <translation>تعذّرت كتابة الملف: %s</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="98"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="97"/>
       <source>Unable to write entire file: %s</source>
       <translation>تعذّرت كتابة الملف الكامل: %s</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="99"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="98"/>
       <source>Unable to initialize decompressor.</source>
       <translation>تعذّرت تهيئة برنامج فك الضغط.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="100"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="99"/>
       <source>Corrupted payload (invalid parameters).</source>
       <translation>بيانات أساسية معطوبة (معلمات غير صالحة).</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="101"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="100"/>
       <source>Unable to move %s</source>
       <translation>تعذّر نقل %s</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="102"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="101"/>
       <source>Unable to create rollback directory. If you proceed, the installation can&apos;t undo any changes if there&apos;s an error.</source>
       <translation>تعذّر إنشاء دليل التراجع. في حالة المتابعة، لا يمكن للتثبيت التراجع عن أي تغييرات إذا حدث خطأ.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="103"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="102"/>
       <source>Unable to create directory: %s</source>
       <translation>تعذّر إنشاء الدليل: %s</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="104"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="103"/>
       <source>The installer does not contain a recognizable payload.</source>
       <translation>لا يحتوي المثبت على بيانات أساسية يمكن التعرف عليها.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="105"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="104"/>
       <source>Missing payload</source>
       <translation>البيانات الأساسية ناقصة</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="106"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="105"/>
       <source>Error uninstalling callout driver.</source>
       <translation>خطأ في إزالة تثبيت برنامج تشغيل الاستدعاء.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="107"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="106"/>
       <source>Callout driver installation failed.</source>
       <translation>تعذّر تثبيت برنامج تشغيل الاستدعاء.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="108"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="107"/>
       <source>WireGuard installation failed.</source>
       <translation>تعذَّر تثبيت WireGuard.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="109"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="108"/>
       <source>WireGuard uninstallation failed.</source>
       <translation>تعذَّرت إزالة تثبيت WireGuard.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="110"/>
-      <source>WinTUN installation failed.</source>
-      <translation>تعذَّر تثبيت WinTUN.</translation>
-    </message>
-    <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="111"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="109"/>
       <source>WinTUN uninstallation failed.</source>
       <translation>تعذَّرت إزالة تثبيت WinTUN.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="112"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="110"/>
       <source>Use Safe Mode with Networking to install or uninstall Private Internet Access.</source>
       <translation>استخدم الوضع الآمن مع الاتصال بالشبكة لتثبيت أو إلغاء تثبيت Private Internet Access.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="113"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="111"/>
       <source>Installation complete</source>
       <translation>اكتمل التثبيت</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="114"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="112"/>
       <source>Restart your computer to use Private Internet Access.</source>
       <translation>أعد تشغيل الكمبيوتر لاستخدام Private Internet Access.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="115"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="113"/>
       <source>Private Internet Access requires Windows 10 or later.</source>
       <translation>يتطلب Private Internet Access نظام Windows 10 أو أحدث.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="117"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="115"/>
       <source>The installation will now abort.</source>
       <translation>سيتم إيقاف التثبيت الآن.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="118"/>
-      <location filename="../../../extras/installer/win/strings.rc" line="122"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="116"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="120"/>
       <source>This is preventing the installation from proceeding.</source>
       <translation>هذا يمنع التثبيت من المتابعة.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="119"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="117"/>
       <source>Do you wish to continue the installation anyway?</source>
       <translation>هل ترغب في متابعة التثبيت على أي حال؟</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="120"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="118"/>
       <source>You can retry or attempt to continue the installation anyway.</source>
       <translation>يمكنك إعادة محاولة التثبيت أو محاولة استكماله على أي حال.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="121"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="119"/>
       <source>The uninstallation will now abort.</source>
       <translation>سيتم إيقاف إزالة التثبيت الآن.</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="123"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="121"/>
       <source>Do you wish to continue the uninstallation anyway?</source>
       <translation>هل ترغب في متابعة إزالة التثبيت على أي حال؟</translation>
     </message>
     <message>
-      <location filename="../../../extras/installer/win/strings.rc" line="124"/>
+      <location filename="../../../extras/installer/win/strings.rc" line="122"/>
       <source>You can retry or attempt to continue the uninstallation anyway.</source>
       <translation>يمكنك إعادة محاولة إزالة التثبيت أو محاولة استكماله على أي حال.</translation>
     </message>

@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -32,6 +32,20 @@ namespace kapps { namespace net {
 
 namespace
 {
+// This is a botch to fix compilation on linux systems with the newest cn_proc.h
+// It was updated to bring the proc_event enum what{} outside into proc_cn_event.
+// We are using PROC_EVENT_ALL (present only on the new version) to check if we
+// are on a new header or an old one.
+#ifdef PROC_EVENT_ALL
+using ProcCnEventWhat = proc_cn_event;
+#else
+// We need to use the 'enum' prefix because the type
+// AND variable name are both 'what' so 'enum' is required
+// to disambiguate and select the type. Without this, it will select the variable which
+// results in a compilation error.
+using ProcCnEventWhat = enum proc_event::what;
+#endif
+
     // Explicitly specify struct alignment
     typedef struct __attribute__((aligned(NLMSG_ALIGNTO)))
     {
@@ -180,14 +194,14 @@ void CnProc::readFromSocket()
 
     switch(message.event.what)
     {
-    case proc_event::PROC_EVENT_NONE:
+    case ProcCnEventWhat::PROC_EVENT_NONE:
         KAPPS_CORE_INFO() << "Listening to process events";
         connected();
         break;
-    case proc_event::PROC_EVENT_EXEC:
+    case ProcCnEventWhat::PROC_EVENT_EXEC:
         exec(eventData.exec.process_pid);
         break;
-    case proc_event::PROC_EVENT_EXIT:
+    case ProcCnEventWhat::PROC_EVENT_EXIT:
         exit(eventData.exit.process_pid);
         break;
     default:

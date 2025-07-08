@@ -10,7 +10,7 @@
 // detect whether to uninstall the driver before an update.  Must match the
 // DriverVersion field in OemVista.inf.  (Used as initializer for a
 // WinDriverVersion)
-#define TAP_DRIVER_VERSION 9, 24, 2, 601
+#define TAP_DRIVER_VERSION 9, 27, 0, 0
 #endif
 #ifndef TAP_DESCRIPTION
 #define TAP_DESCRIPTION NULL

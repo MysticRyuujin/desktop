@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -84,8 +84,10 @@ QtObject {
     uiTr("Large Packets: Most efficient if the connection is reliable"),
     uiTr("Small Packets: Less efficient but best on unreliable connections")
   ].join("\n\u2022\xA0\xA0")
-  
+
   readonly property string stUpdateOSMessage: uiTr("The split tunnel feature is available only on macOS 11 (Big Sur) or newer versions. Please update your OS if you want to use this feature")
 
   readonly property string stMacOSNotInstalledMessage: uiTr("Split Tunnel is not installed. Go to System Settings -> Privacy & Security, scroll down to Security section and \"Allow\" PIA. Then click \"Allow\" on the Proxy Configurations popup")
+
+    readonly property string stMacOS15NotInstalledMessage: uiTr("Split Tunnel is not installed. Go to System Settings -> General. Click 'i' in the Network Extensions row and enable PIA Split Tunnel. Then click \"Allow\" on the Proxy Configurations popup")
 }

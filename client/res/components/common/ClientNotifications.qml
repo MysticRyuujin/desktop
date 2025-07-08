@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -719,6 +719,10 @@ Item {
   signal showRegions()
   // Show Login page
   signal showLoginPage()
+  // Show Account page
+  signal showAccountPage()
+  // Helper to warn users first before performing the logout.
+  signal requestLogout()
 
   // The title of the first active error-level notification if there is one, or
   // "" if there are no active errors.

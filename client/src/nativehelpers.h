@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -82,6 +82,7 @@ public:
     Q_PROPERTY(QString productName READ getProductName FINAL CONSTANT)
 
     Q_PROPERTY(bool macosSplitTunnelSupported READ isMacOSSplitTunnelSupported FINAL CONSTANT)
+    Q_PROPERTY(bool macosVersion15 READ isMacOSVersion15 FINAL CONSTANT)
 
     // Whether the client is currently logging to a file.  This exposes the flag
     // from Logger, which works with or without a daemon connection.
@@ -244,6 +245,7 @@ private:
     Architecture getArchitecture() const;
     QString getProductName() const;
     bool isMacOSSplitTunnelSupported() const;
+    bool isMacOSVersion15() const;
     bool getLogToFile();
     bool getSplitTunnelSupported() const;
     void onFocusWindowChanged(QWindow *pFocusWindow);

@@ -265,9 +265,9 @@ class Build
 
     # Minimum macOS version supported by the project.  (In addition to clang.rb,
     # also used in some generated Info.plist files.)
-    # Current minimum supported version is 10.14
+    # Current minimum supported version is 10.15
     MacosVersionMajor = 10
-    MacosVersionMinor = 14
+    MacosVersionMinor = 15
 
     # Shortcuts to check for specific build variants
     def self.debug?

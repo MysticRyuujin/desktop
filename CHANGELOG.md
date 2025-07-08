@@ -1,8 +1,17 @@
 # Changelog
+### v3.6.2
+* Windows: Updated tap-windows6 driver with latest security patches
+* Linux: Prevent local unauthorized users from disconnecting or altering VPN settings
+* Linux: Fixed potential IP leak when using split tunneling in bypass mode
+* Linux: Fixed connection issues on newer distros (e.g., Ubuntu 25.04)
+* macOS: Minimum supported version is now 10.15 (Apple dropped 10.14 support)
+* All: Fix issue where a DIP token would be remembered on logout
+
 ### v3.6.1
 * Windows: Experimental arm64 support
 * Windows: Updated to Wintun driver 0.14.1
-* Windows: Wintun is now the default for OpenVPN connections. This should improve the bandwith
+* Windows: Wintun is now the default for OpenVPN, boosting connection bandwidth
+* Windows: Updated to TAP driver 9.27.0.0. Fix potential integer overflow (CVE: 2024-1305)
 * Windows: Only PIA clients can now send RPC calls to disconnect or logout the user from the VPN
 * MacOS: Unprivileged users can no longer prevent the PIA client from installing
 * All: Fixed a potential bug that could cause the client to crash when opening deep links

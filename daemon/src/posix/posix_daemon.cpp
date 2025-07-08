@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -689,7 +689,7 @@ void PosixDaemon::writePlatformDiagnostics(DiagnosticsFile &file)
         QStringLiteral("-c1"), QStringLiteral("-W1"), QStringLiteral("-n")});
     file.writeCommand("resolv.conf", "cat", QStringList{QStringLiteral("/etc/resolv.conf")});
     file.writeCommand("ls -l resolv.conf", "ls", QStringList{QStringLiteral("-l"), QStringLiteral("/etc/resolv.conf")});
-    file.writeCommand("systemd-resolve --status", "systemd-resolve", QStringList{QStringLiteral("--status")});
+    file.writeCommand("resolvectl status", "resolvectl", QStringList{QStringLiteral("status")});
 
     // Relevant only for `resolvconf` DNS (not systemd-resolve)
     // Collect the interface-specific DNS for resolvconf and the order of interfaces.

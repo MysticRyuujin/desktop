@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -81,6 +81,19 @@ void LinuxFirewall::applyRules(const FirewallParams &params)
 
     _pFilter->setAnchorEnabled(TableEnum::Filter, IPVersion::Both, "999.allowLoopback", params.allowLoopback);
     _pFilter->setAnchorEnabled(TableEnum::Filter, IPVersion::Both, "100.blockAll", params.blockAll);
+    // This rule is active only in the case of 'inverse split tunnel'
+    // because in that scenario the blockAll rule is not active.
+    //
+    // This blocks Only VPN apps from leaking users ISP IP, if the request
+    // targets the external VPN gateway.
+    // Since the daemon can take a while to fetch the externalVpnIp,
+    // we set the rule only when we the value is available.
+    bool enableBlockVpnIP = params.method == "openvpn"
+                                ? params.leakProtectionEnabled && params.bypassDefaultApps &&
+                                      !params.externalVpnIp.empty()
+                                : false;
+    _pFilter->setAnchorEnabled(TableEnum::Filter, IPVersion::Both, "110.blockVpnIP",
+                               enableBlockVpnIP);
     _pFilter->setAnchorEnabled(TableEnum::Filter, IPVersion::Both, "200.allowVPN", params.allowVPN);
     // Allow bypass apps to override KS only when disconnected -
     // if we were to allow this rule when connected as well (which just allows a bypass app to do what it wants)
@@ -389,7 +402,7 @@ void LinuxFirewall::updateRules(const FirewallParams &params)
         // reach the configured DNS.
         //
         // This must occur after cgroup filtering when ST DNS is enabled.
-        // Otherwise, when not using systemd-resolved, this could defeat the
+        // Otherwise, when not using systemd-resolved or resolvectl, this could defeat the
         // leak protection above.
         for(auto &dnsRule : effectiveDnsRules)
             ruleList.push_back(std::move(dnsRule));
@@ -411,6 +424,9 @@ void LinuxFirewall::updateRules(const FirewallParams &params)
         enableRouteLocalNet();
     else
         disableRouteLocalNet();
+
+     _pFilter->replaceAnchor(TableEnum::Filter, IPVersion::IPv4, "110.blockVpnIP",
+                            {qs::format("-d % -j REJECT", params.externalVpnIp)});
 
     _appDnsInfo = appDnsInfo;
     _adapterName = adapterName;

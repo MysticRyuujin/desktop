@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -37,9 +37,7 @@ import PIA.BrandHelper 1.0
 Page {
   id: dedicatedIpPage
 
-  readonly property bool dedicatedIpExists: {
-    return Array.isArray(Daemon.state.dedicatedIpLocations) && Daemon.state.dedicatedIpLocations.length > 0;
-  }
+  readonly property bool dedicatedIpExists: Array.isArray(Daemon.state.dedicatedIpLocations) && Daemon.state.dedicatedIpLocations.length > 0
 
   GridLayout {
     anchors.fill: parent

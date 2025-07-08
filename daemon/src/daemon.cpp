@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -1585,10 +1585,8 @@ void Daemon::RPC_logout()
     // Reset account data along with relevant settings
     QString tokenToExpire = _account.token();
 
-    // Wipe out account, except for dedicated IPs
-    auto dedicatedIps = _account.dedicatedIps();
     _account.reset();
-    _account.dedicatedIps(std::move(dedicatedIps));
+    _state.dedicatedIpLocations({});
     _settings.recentLocations({});
     _state.openVpnAuthFailed(0);
 
@@ -3175,6 +3173,9 @@ void Daemon::reapplyFirewallRules()
     // Should routed packets go over VPN or bypass ?
     params.routedPacketsOnVPN = _settings.routedPacketsOnVPN();
 
+    params.externalVpnIp = _state.externalVpnIp().toStdString();
+    params.method = _settings.method().toStdString();
+
     qInfo() << "Reapplying firewall rules;"
             << "state:" << qEnumToString(_connection->state())
             << "clients:" << _clients.size()
@@ -3184,7 +3185,8 @@ void Daemon::reapplyFirewallRules()
             << "blockIPv6:" << _settings.blockIPv6()
             << "allowLAN:" << _settings.allowLAN()
             << "dnsType:" << (connectionSettings ? qEnumToString(connectionSettings->dnsType()) : QLatin1String("N/A"))
-            << "dnsServers:" << (connectionSettings ? connectionSettings->getDnsServers() : QStringList{});
+            << "dnsServers:" << (connectionSettings ? connectionSettings->getDnsServers() : QStringList{})
+            << "externalVpnIp:" << _state.externalVpnIp();
 
     bool killswitchEnabled = params.leakProtectionEnabled;
     applyFirewallRules(std::move(params));
@@ -3524,7 +3526,7 @@ void Daemon::onUpdateRefreshed(const Update &availableUpdate,
     // example, that there might be a supported GA update available, and also a
     // beta update that has dropped support for this OS version.
     _state.osUnsupported(!availableUpdate.isValid() && osFailedRequirement);
-    
+
     // If this is the first time feature flags have been loaded for a new
     // installation, apply default-setting feature flags now.
     if(_checkInstallFeatureFlags)

@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -77,7 +77,43 @@ Page {
         SettingsButton {
           text: uiTr("Log Out / Switch Account")
           underlined: true
-          onClicked: Daemon.logout()
+          onClicked: {
+            ClientNotifications.requestLogout();
+          }
+        }
+
+        Connections {
+          target: ClientNotifications
+          function onRequestLogout() {
+            if (Daemon.state.dedicatedIpLocations.length == 0) {
+              Daemon.logout();
+            }
+            else {
+              console.log("Logout requested with DIP Present, will prompt for confirmation");
+              confirmDipLogout.open();
+            }
+          }
+        }
+
+        OverlayDialog {
+          id: confirmDipLogout
+          title: uiTr("Before you log out")
+          buttons: [Dialog.Ok, Dialog.Cancel]
+          ColumnLayout {
+            width: parent.width
+            DialogMessage {
+              id: alertMessage
+              text: uiTr("You have an active Dedicated IP token. It will be removed when you log out. You can re-activate it using the token. Are you sure you want to continue?")
+              icon: icons.warning
+              Layout.minimumWidth: 200
+              Layout.maximumWidth: 400
+            }
+          }
+          onAccepted: {
+            // Forget recent locations when logging out so DIP is not remembered.
+            Client.applySettings({recentLocations: []});
+            Daemon.logout();
+          }
         }
       }
     }
@@ -324,5 +360,10 @@ Page {
     Item {
       Layout.fillHeight: true
     }
+  }
+
+  function confirmDipTokenDeletionAndLogout() {
+    ClientNotifications.showAccountPage();
+    confirmDipLogout.open();
   }
 }

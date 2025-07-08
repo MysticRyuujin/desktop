@@ -18,7 +18,7 @@ The `Pseudo-translated` language is included with debug builds and can be select
 On a Linux system:   
  1. Install `libthai-dev`
  2. Run `rake tools`
- 3. Run `import_translations.sh translations.zip`
+ 3. Run `out/<brand>_<variant>_<arch>/tools/bin/import_translations.sh translations.zip`
  4. Check that .ts files have been modified
 
 # Things to remember when writing translatable code

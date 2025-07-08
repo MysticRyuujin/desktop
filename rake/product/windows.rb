@@ -72,7 +72,7 @@ module PiaWindows
             end
             puts "Couldn't find " + vcVer
         end
-
+        puts "Found VC #{crtDir}"
         if !File.exist?(crtDir) or !crtFound
             raise "error: cannot find CRT. Install MSVC v142+"
         end

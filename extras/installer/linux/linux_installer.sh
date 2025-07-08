@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright (c) 2024 Private Internet Access, Inc.
+# Copyright (c) 2025 Private Internet Access, Inc.
 #
 # This file is part of the Private Internet Access Desktop Client.
 #
@@ -43,11 +43,14 @@ readonly serviceName="${brandCode}vpn"
 readonly groupName="${brandCode}vpn"
 readonly hnsdGroupName="${brandCode}hnsd"                # The group used by the Handshake DNS service
 readonly ctlExecutableName="{{BRAND_CODE}}ctl"
+readonly clientExecutableName="{{BRAND_CODE}}-client"
 readonly ctlExecutablePath="${installDir}/bin/${ctlExecutableName}"
+readonly clientExecutablePath="${installDir}/bin/${clientExecutableName}"
 readonly ctlSymlinkPath="/usr/local/bin/${ctlExecutableName}"
 readonly wgIfPrefix="wg${brandCode}"                       # WireGuard interface prefix, e.g wgpia
 readonly nmConfigDir="/etc/NetworkManager/conf.d"
 readonly nmConfigPath="${nmConfigDir}/${wgIfPrefix}.conf"  # Our custom NetworkManager config
+readonly installingUser="$(whoami)"
 
 # Set by arguments, or auto-detected
 BOOT_MANAGER=
@@ -190,6 +193,18 @@ function hasDependencies() {
     # binary is in another directory
     if ! iptables --version >/dev/null 2>&1; then return 1; fi
 
+    # Detect libatomic in debian-based distributions
+    if hash dpkg 2>/dev/null; then
+        dpkg -l | grep -q libatomic1 || return 1
+    fi
+
+    # xterm is a terminal emulator, it is
+    # used by the GUI client to run commands in a terminal.
+    # We used to support a variety of terminal emulators, but we can't keep up
+    # with the large number of terminal emulators available on Linux. So we
+    # install xterm to ensure we have one that we support.
+    if ! hash xterm 2>/dev/null; then return 1; fi
+
     return 0
 }
 
@@ -200,6 +215,7 @@ function promptManualDependencies() {
     echo " - libnl-route-3-200, libnl-genl-3-200 (may be included in libnl-3-200)"
     echo " - libnsl (libnsl.so.1)"
     echo " - iptables"
+    echo " - xterm"
     requestConfirmation "Continue with installation?"
 }
 
@@ -230,11 +246,11 @@ function installDependencies() {
 
     if hash yum 2>/dev/null; then
         # libnsl is no longer part of of the glibc package on Fedora
-        sudo yum -y install libxkbcommon-x11 libnl3 libnsl iptables psmisc
+        sudo yum -y install libxkbcommon-x11 libnl3 libnsl iptables psmisc libatomic xterm
     elif hash pacman 2>/dev/null; then
-        sudo pacman -S --noconfirm libxkbcommon-x11 libnl iptables psmisc
+        sudo pacman -S --noconfirm libxkbcommon-x11 libnl iptables psmisc libatomic_ops xterm
     elif hash zypper 2>/dev/null; then
-        sudo zypper install -y libxkbcommon-x11-0 iptables psmisc
+        sudo zypper install -y libxkbcommon-x11-0 iptables psmisc libatomic xterm
         # Ensure that libnsl.so.1 is available - required by openvpn.
         # On recent versions of opensuse this is not installed by default.
         # NOTE: this install will fail on systems that already have libnsl.so.1
@@ -246,7 +262,7 @@ function installDependencies() {
     # manager.  This check uses Debian package names though that aren't
     # necessarily the same on other distributions.
     elif hash apt-get 2>/dev/null; then
-        APT_PKGS="libxkbcommon-x11-0 libnl-3-200 libnl-route-3-200 iptables psmisc"
+        APT_PKGS="libxkbcommon-x11-0 libnl-3-200 libnl-route-3-200 iptables psmisc libatomic1 xterm"
         sudo apt-get install --yes $APT_PKGS
     else
         promptManualDependencies
@@ -476,7 +492,7 @@ function checkArchitectureSupport() {
         INSTALLED_PIA_ARCHITECTURE=
     fi
 
-    # If the user has forced the architecture, skip all architecture chceks
+    # If the user has forced the architecture, skip all architecture checks
     if [ -n "$FORCE_ARCHITECTURE" ]; then
         true # Nothing to check
     # If the architecture being installed is already installed, then still test
@@ -675,3 +691,11 @@ esac
 
 # Restore the original umask
 umask "$ORIG_UMASK"
+
+# Changing the owner from root to installing user.
+# This is done in order to prevent other users from executing the clients binaries
+sudo chown $installingUser $clientExecutablePath
+sudo chown $installingUser $ctlExecutablePath
+# Only the owner, which is the installing user, is able to run the clients
+sudo chmod 754 $clientExecutablePath
+sudo chmod 754 $ctlExecutablePath

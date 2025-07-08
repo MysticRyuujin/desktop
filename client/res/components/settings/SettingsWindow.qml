@@ -1,4 +1,4 @@
-// Copyright (c) 2024 Private Internet Access, Inc.
+// Copyright (c) 2025 Private Internet Access, Inc.
 //
 // This file is part of the Private Internet Access Desktop Client.
 //
@@ -293,6 +293,9 @@ SecondaryWindow {
     }
     function onShowHelpPage() {
       settings.showPage('help')
+    }
+    function onShowAccountPage() {
+      settings.showPage('account')
     }
 
     function startDriverReinstall(driverName) {
